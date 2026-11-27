@@ -1,0 +1,16 @@
+LAUNCHER STYLE IPHONE (Android)
+
+1. Installe Android Studio, puis File > Open > dossier IosLauncher. Laisse Gradle se synchroniser.
+2. Branche ton Samsung (débogage USB activé) et clique sur Run.
+3. Appuie sur le bouton Accueil : Android propose de choisir le launcher, prends "iOS Launcher" > Toujours.
+
+Inclus : écran d'accueil à pages, icônes arrondies, dock (tel, messages, navigateur, appareil photo),
+widget horloge, bibliothèque d'apps (dernière page), recherche (balayage vers le bas),
+centre de contrôle (balayage vers le bas dans le coin haut droit), Dynamic Island (touche-la).
+
+Réglage : dans MainActivity.kt, ISLAND_TOP / ISLAND_W / ISLAND_H pour caler l'île sur ta caméra.
+
+GITHUB
+Mets le contenu de ce dossier (pas le dossier lui-même) à la racine du dépôt, y compris le dossier caché .github.
+A chaque envoi, l'onglet Actions fabrique l'APK : ouvre l'exécution terminée, section Artifacts, télécharge "ios-launcher-apk".
+Installe l'APK sur le Samsung (autoriser les sources inconnues).
